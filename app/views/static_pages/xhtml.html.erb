@@ -1,0 +1,93 @@
+<div class="total">
+  <div class="xhtml">
+    <h1 class="xhtml_title">XHTML</h1>
+  </div>
+
+  <div class="link_to">
+    <%= link_to "Back to Index", root_path, {:style=>'color:#FFFFFF;'}%>
+  </div>
+  <br>
+  <div class="redirect_google">
+    <p class="google">Can't find it...?</p>
+    <a class="google_img" href="http://google.com"><img src="http://www.telegraph.co.uk/content/dam/technology/2016/05/09/google_3277450b-large_trans++pJliwavx4coWFCaEkEsb3kvxIt-lGGWCWqwLa_RXJU8.jpg" height="80" style="border-radius: 5px;" ""/></a>
+    <p class="google">Google it !!</p>
+  </div>
+</div>
+<div class="content">
+  <div class="top_split">
+    <table class="pics" width="100%" border="1" cellpadding="10" cellspacing="5">
+      <tr>
+        <th colspan="4"><h3>That's us!!<%= link_to image_tag("bull.jpg") %></h3></th>
+      </tr>
+      <tr>
+        <th>That's me</th>
+        <th>This is Karen and Sam</th>
+        <th>Manu and Rana</th>
+        <th>Sweet mexi</th>
+      </tr>
+      <tr>
+        <td><%= link_to image_tag("me.jpg") %></td>
+        <td><%= link_to image_tag("karen.jpg") %></td>
+        <td><%= link_to image_tag("manu_rana.jpg") %></td>
+        <td><%= link_to image_tag("mexi.jpg") %></td>
+      </tr>
+    </table>
+  </div>
+<hr>
+
+<h1 class="jsheader"><em>Trying to learn myself JavaScript</em></h1>
+
+  <pre>
+    <h3>Comments</h3>
+      It seems that also xhtml is some how related or mixed in this whole story.
+      So for a short side step I will recap this part now.
+      To make a comment in html you do this: &lt;!-- comment... --&gt;
+  </pre>
+
+  <pre>
+    <h3><a name="links"></a>Links section: Link to a paragraph on the same page</h3>
+      To make a link to a paragraph or part in you webpage (on the same page) you can do the following:
+      &lt;img src="bull.jpg" style="border-radius: 5px;/&gt;
+      this you put around the part which you want to link to the link
+      on top of your web page so the user only has click the link to get to this part. So you will
+      have to make a link on top of your page like so: &lt;a href="#me">Me section&lt;/a&gt;
+  </pre>
+
+  <pre>
+    <h3><a name="resize"></a>Image resize section: How to Resize Images:</h3>
+      To resize images you can do: >img src="madden.jpg" height="150"/< where 150 means 150 px,
+      with this added the image will be resized. Better way to do this is first resize the picture before use,
+      for example with photoshop. Because if you use a bigger picture and adjust the size on the webpage you still
+      make the site download the big size everytime which makes the site slower.
+  </pre>
+
+  <pre>
+    <h3><a name="Table Headers"></a>Table Headers section: How to make Table Hearders:</h3>
+      To make table headers you use the '<th>' and its closing tag ofcourse, this makes the text go bold
+      and centers the header text. So start with creating a table by 'table and its closing tag then the opening <tr> tag
+      with the closing one then make the table headers with the content you want in it.
+      <br>
+      For making a header which goes over all rows you use the colspan attribute like on 'Thats us!!'
+      &lt;th colspan="4"&gt;&lt;h3&gt;That's us!!&lt;img id="bull_pic" src="bull.jpg"/&gt;&lt;/h3&gt;&lt;/th&gt;
+  </pre>
+  <table border="1" width="100%" cellspacing="10" cellpadding="10">
+    <tr>
+      <th>Type of people</th>
+      <th>Reason dislike</th>
+    </tr>
+    <tr>
+      <td>Extremists</td>
+      <td>To extreme for me</td>
+    </tr>
+  </table>
+
+  <pre>
+    <h3><a name="cellspacing"></a>Table Spacing: How to use spacing</h3>
+      To make the width of the column bigger (standard it takes the width of the longest word or sentence)
+      you can use in the 'table' tag next to ' border="1" width="100%" ' with this the table also gets flexible
+      for the page.
+
+      Getting extra space between border and text in the cells you use 'cellpadding' like in the 'Type of people' table.
+      To get space between the cells themselves you use 'cellspacing' which is also used in the 'Type of people' table.
+  </pre>
+</div>
