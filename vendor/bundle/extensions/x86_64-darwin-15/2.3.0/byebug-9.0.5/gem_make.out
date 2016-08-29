@@ -1,0 +1,19 @@
+current directory: /Users/frankdewolf/Code/js/oefen_js/front_end/vendor/bundle/gems/byebug-9.0.5/ext/byebug
+/Users/frankdewolf/.rvm/rubies/ruby-2.3.0/bin/ruby -r ./siteconf20160829-848-1kd4tkm.rb extconf.rb
+creating Makefile
+
+current directory: /Users/frankdewolf/Code/js/oefen_js/front_end/vendor/bundle/gems/byebug-9.0.5/ext/byebug
+make "DESTDIR=" clean
+
+current directory: /Users/frankdewolf/Code/js/oefen_js/front_end/vendor/bundle/gems/byebug-9.0.5/ext/byebug
+make "DESTDIR="
+compiling breakpoint.c
+compiling byebug.c
+compiling context.c
+compiling locker.c
+compiling threads.c
+linking shared-object byebug/byebug.bundle
+
+current directory: /Users/frankdewolf/Code/js/oefen_js/front_end/vendor/bundle/gems/byebug-9.0.5/ext/byebug
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 byebug.bundle ./.gem.20160829-848-p62vag/byebug
