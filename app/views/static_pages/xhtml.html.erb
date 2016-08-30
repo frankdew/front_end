@@ -12,12 +12,24 @@
     <a class="google_img" href="http://google.com"><img src="http://www.telegraph.co.uk/content/dam/technology/2016/05/09/google_3277450b-large_trans++pJliwavx4coWFCaEkEsb3kvxIt-lGGWCWqwLa_RXJU8.jpg" height="80" style="border-radius: 5px;" ""/></a>
     <p class="google">Google it !!</p>
   </div>
+  <br><br>
+  <div class="quick_ref">
+    <h3 id="link">Quick reference:</h3>
+    <ul class="link_list">
+      <li><%= link_to "To top", :anchor => "top" %></li>
+      <li><%= link_to "Resize", :anchor => "size" %></li>
+      <li><%= link_to "Table Headers", :anchor => "headers" %></li>
+      <li><%= link_to "Cellspacing", :anchor => "cellspacing" %></li>
+    </ul>
+  </div>
 </div>
+<a id="top"></a>
+
 <div class="content">
   <div class="top_split">
     <table class="pics" width="100%" border="1" cellpadding="10" cellspacing="5">
       <tr>
-        <th colspan="4"><h3>That's us!!<%= link_to image_tag("bull.jpg") %></h3></th>
+        <th colspan="4"><h3 class="table_header">This's us!!</h3><h3 class="bull_pic"><%= link_to image_tag("bull.jpg") %></h3></th>
       </tr>
       <tr>
         <th>That's me</th>
@@ -35,7 +47,7 @@
   </div>
 <hr>
 
-<h1 class="jsheader"><em>Trying to learn myself JavaScript</em></h1>
+<h1 class="jsheader"><em>Learning about XHTML</em></h1>
 
   <pre>
     <h3>Comments</h3>
@@ -45,16 +57,16 @@
   </pre>
 
   <pre>
-    <h3><a name="links"></a>Links section: Link to a paragraph on the same page</h3>
+    <h3>Links section: Link to a paragraph on the same page</h3>
       To make a link to a paragraph or part in you webpage (on the same page) you can do the following:
-      &lt;img src="bull.jpg" style="border-radius: 5px;/&gt;
-      this you put around the part which you want to link to the link
-      on top of your web page so the user only has click the link to get to this part. So you will
-      have to make a link on top of your page like so: &lt;a href="#me">Me section&lt;/a&gt;
+      &lt;h3&gt;&lt;a name="links"&gt;&lt;/a&gt;paragraph title&lt;/h3&gt; (for Rails you have to use 'id' instead of 'name')
+      this you put at the start of the part which you want to link to.
+      You put the link on top (or in navbar) of your web page so the user only has click the link to get to this part.
+      So you will have to make a link on top of your page like so: &lt;a href="#me">Me section&lt;/a&gt;
   </pre>
 
   <pre>
-    <h3><a name="resize"></a>Image resize section: How to Resize Images:</h3>
+    <h3><a id="size"></a>Image resize section: How to Resize Images:</h3>
       To resize images you can do: >img src="madden.jpg" height="150"/< where 150 means 150 px,
       with this added the image will be resized. Better way to do this is first resize the picture before use,
       for example with photoshop. Because if you use a bigger picture and adjust the size on the webpage you still
@@ -62,7 +74,7 @@
   </pre>
 
   <pre>
-    <h3><a name="Table Headers"></a>Table Headers section: How to make Table Hearders:</h3>
+    <h3><a id="headers"></a>Table Headers section: How to make Table Hearders:</h3>
       To make table headers you use the '<th>' and its closing tag ofcourse, this makes the text go bold
       and centers the header text. So start with creating a table by 'table and its closing tag then the opening <tr> tag
       with the closing one then make the table headers with the content you want in it.
@@ -82,7 +94,7 @@
   </table>
 
   <pre>
-    <h3><a name="cellspacing"></a>Table Spacing: How to use spacing</h3>
+    <h3><a id="cellspacing"></a>Table Spacing: How to use spacing</h3>
       To make the width of the column bigger (standard it takes the width of the longest word or sentence)
       you can use in the 'table' tag next to ' border="1" width="100%" ' with this the table also gets flexible
       for the page.
