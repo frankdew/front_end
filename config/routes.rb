@@ -4,5 +4,5 @@ Rails.application.routes.draw do
   get 'static_pages/css'
   get 'static_pages/js'
   get 'static_pages/jquery'
-
+  get 'static_pages/bootstrap'
 end

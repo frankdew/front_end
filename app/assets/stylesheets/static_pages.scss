@@ -5,6 +5,19 @@
   font-family: fantasy;
   text-decoration: underline;
   margin: 10px 10px 10px 10px;
+  color: #585858;
+  text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
 }
 
 .total {
@@ -15,7 +28,7 @@
     margin-top: 0px;
     border-radius: 2px;
     background-color: #A4A4A4;
-    width: 140px;
+    width: 175px;
   }
 
 .link_to {
@@ -86,8 +99,13 @@ h3, .cssheader, .xhtml_header {
 
 .table_header {
   float: left;
-  margin-left: 90px;
-  font-family: fantasy;
+  margin-left: 75px;
+  color: white;
+  text-shadow:
+   -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
   font-size: 50px;
 }
 
@@ -102,11 +120,23 @@ h3, .cssheader, .xhtml_header {
 .index_content {
   display: flex;
   flex-wrap: wrap;
-  background: url("html_css_banner.jpg");
+  justify-content: center;
+  margin-top: 90px;
+  margin-left: 100px;
 }
 
 .index_header {
   text-align: center;
   font-family: fantasy;
-  margin-left: 100px;
+  margin-left: 160px;
 }
+
+.maker {
+  position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    text-align: left;
+    margin-left: 6px;
+  }
