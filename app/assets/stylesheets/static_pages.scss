@@ -75,11 +75,30 @@
   margin-left: 50px;
 }
 
-h3, .cssheader, .xhtml_header {
+h3 {
   margin-left: 50px;
   margin-bottom: 0px;
   margin-top: 0px;
   text-decoration: underline;
+}
+
+.cssheader, .xhtml_header {
+  font-family: 'Bevan', cursive;
+  margin-left: 50px;
+  padding: 10px 10px 10px 10px;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: #ffffff;
+}
+
+.css_head, .xhtmlhead {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.css_pic {
+  margin-right: 60px;
 }
 
 .link_list {
@@ -97,6 +116,11 @@ h3, .cssheader, .xhtml_header {
   border-radius: 5px;
 }
 
+table {
+  border-color: #424242;
+  border-top-color: #ffffff;
+  border-bottom-color: #ffffff;
+}
 .table_header {
   float: left;
   margin-left: 75px;
@@ -107,6 +131,14 @@ h3, .cssheader, .xhtml_header {
     -1px 1px 0 #000,
      1px 1px 0 #000;
   font-size: 50px;
+}
+
+.data_row {
+  font-family: 'Permanent Marker', cursive;
+}
+
+td {
+  text-align: center;
 }
 
 .line_height {
@@ -121,18 +153,45 @@ h3, .cssheader, .xhtml_header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 90px;
-  margin-left: 100px;
-}
-
-.index_header {
-  text-align: center;
-  font-family: fantasy;
+  margin-top: 60px;
   margin-left: 160px;
 }
 
+.index_header_text {
+  margin-left: 100px;
+  font-family: fantasy;
+  font-size: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-decoration: underline;
+  color: #ffffff;
+  text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+
+.index_header {
+  display: flex;
+  margin-left: 410px;
+  margin-right: 250px;
+  border-style: solid;
+  border-radius: 10px;
+  padding: 5px 5px 5px 90px;
+  border-color: #ffffff;
+
+}
+
 .maker {
-  position: absolute;
+    position: fixed;
     right: 0;
     bottom: 0;
     left: 0;
@@ -140,3 +199,11 @@ h3, .cssheader, .xhtml_header {
     text-align: left;
     margin-left: 6px;
   }
+
+.google_fonts {
+  font-family: 'Permanent Marker', cursive;
+}
+
+#black_ops {
+  font-family: 'Black Ops One', cursive;
+}

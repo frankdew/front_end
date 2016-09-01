@@ -15,7 +15,11 @@
 
 <div class="content">
   <br><br>
-  <h1 class="cssheader"><em>Learning about CSS</em></h1>
+  <div class="css_head">
+    <h1 class="cssheader"><em>&alefsym; Learning about CSS &alefsym;</em></h1>
+    <img class="css_pic" src="http://cssjockey.com/wp-content/uploads/2013/05/cssjockey-css.png" height="60" style="border-radius:5px" />
+  </div>
+
   <pre  class="line_height">
     <h3>line-height</h3>
       line-height makes the space between lines bigger or smaller, just what you prefer.
@@ -42,4 +46,28 @@
       To have text stand-out you can do like &lt;span style=”color:red”&gt;This text must stand out!&lt;/span&gt;.
       You can use this for all the style types
   </pre>
+
+  <pre>
+    <h3 class="google_font">Adding Google fonts</h3>
+      This is fun to look at and easy to do, this title is in font-family: 'Permanent Marker', cursive;
+      <span id="black_ops">this text is in font-family: 'Black Ops One', cursive;</span>
+      How it works:
+      You go to the site of 'Google fonts' and choose a font you like, then you click the + sign in that font block
+      now you see at the bottom of the page '1 Family Selected'. Click this and follow the instructions.
+      This means, add the style link to your html (between the &lt;head&gt; tags)and use the given font-family to style your site.
+  </pre>
+
+  <pre>
+    <h3>Images</h3>
+      To add a background image to your page you can do that by using: background-image:url(picname.jpg);
+      make sure the picture you want to use is in the same folder as from where you are working.
+      The picture will, by default, repeat itself over the page. To not have it repeat itself you add:
+      background-repeat:no-repeat;
+      To make the picture only repeat from left to right use: background-repeat:repeat-x; (as in x-as)
+      for repeat up an down you can therefor use the -y; and the -z; is for forward an backward.
+      With the property background-position you can position the image where you want it on your page.
+      background-position takes to parameters (left right), so you can set it 10px from the left and 50px from the top like so:
+      background-position:10px 50px; to make a picture in the center for several screen sizes you can also use
+      percentage like so: background-position:50% 50px; which sets the pic on any screen in the middle.
+    </pre>
 </div>
