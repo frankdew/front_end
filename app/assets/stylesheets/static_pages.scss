@@ -65,6 +65,7 @@
   font-family: fantasy;
   text-decoration: underline;
   border-color: #2E2E2E;
+  border-radius: 5px;
 }
 
 #bull_pic {
@@ -82,22 +83,28 @@ h3 {
   text-decoration: underline;
 }
 
-.cssheader, .xhtml_header {
+.cssheader, .xhtml_header, .index_header, .bootstrapheader {
   font-family: 'Bevan', cursive;
   margin-left: 50px;
   padding: 10px 10px 10px 10px;
   border-style: solid;
   border-radius: 10px;
   border-color: #ffffff;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#deefff+45,deefff+45,deefff+51,98bede+100 */
+  background: rgb(222,239,255); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(222,239,255,1) 45%, rgba(222,239,255,1) 45%, rgba(222,239,255,1) 51%, rgba(152,190,222,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(222,239,255,1) 45%,rgba(222,239,255,1) 45%,rgba(222,239,255,1) 51%,rgba(152,190,222,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(222,239,255,1) 45%,rgba(222,239,255,1) 45%,rgba(222,239,255,1) 51%,rgba(152,190,222,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#deefff', endColorstr='#98bede',GradientType=0 ); /* IE6-9 */
 }
 
-.css_head, .xhtmlhead {
+.css_head, .xhtmlhead, .index_header, .bootstrap_head {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.css_pic {
+.css_pic, .bootstrap_pic {
   margin-right: 60px;
 }
 
@@ -187,7 +194,6 @@ td {
   border-radius: 10px;
   padding: 5px 5px 5px 90px;
   border-color: #ffffff;
-
 }
 
 .maker {
