@@ -25,7 +25,6 @@
     flex-direction: column;
     position: fixed;
     min-height: 100%;
-    margin-top: 0px;
     border-radius: 2px;
     background-color: #A4A4A4;
     width: 175px;
@@ -83,7 +82,7 @@ h3 {
   text-decoration: underline;
 }
 
-.cssheader, .xhtml_header, .index_header, .bootstrapheader {
+.cssheader, .xhtml_header, .index_header, .bootstrapheader, .angularheader, .jsheader, .jqueryheader {
   font-family: 'Bevan', cursive;
   margin-left: 50px;
   padding: 10px 10px 10px 10px;
@@ -98,13 +97,13 @@ h3 {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#deefff', endColorstr='#98bede',GradientType=0 ); /* IE6-9 */
 }
 
-.css_head, .xhtmlhead, .index_header, .bootstrap_head {
+.css_head, .xhtmlhead, .bootstrap_head, .angular_head, .js_head, .jquery_head {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.css_pic, .bootstrap_pic {
+.css_pic, .bootstrap_pic, .angular_pic, .js_pic, .jquery_pic {
   margin-right: 60px;
 }
 
@@ -161,15 +160,17 @@ td {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 60px;
-  margin-left: 160px;
+  margin-right: 85px;
+  margin-bottom: 150px;
 }
 
 .index_header_text {
-  margin-left: 100px;
+  // margin-left: 100px;
   font-family: fantasy;
   font-size: 20px;
-  margin-left: 10px;
-  margin-right: 10px;
+  height: 130px;
+  // margin-left: 10px;
+  // margin-right: 10px;
   text-decoration: underline;
   color: #ffffff;
   text-shadow: 0 1px 0 #ccc,
@@ -188,6 +189,7 @@ td {
 
 .index_header {
   display: flex;
+  flex-direction: column;
   margin-left: 410px;
   margin-right: 250px;
   border-style: solid;

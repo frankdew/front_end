@@ -11,7 +11,18 @@
     <a class="google_img" href="http://google.com"><img src="http://www.telegraph.co.uk/content/dam/technology/2016/05/09/google_3277450b-large_trans++pJliwavx4coWFCaEkEsb3kvxIt-lGGWCWqwLa_RXJU8.jpg" height="102" style="border-radius: 5px;" ""/></a>
     <p class="google">Google it !!</p>
   </div>
+  <br>
+  <div class="quick_ref">
+    <h3 id="link">Quick reference:</h3>
+    <ul class="link_list">
+      <li><%= link_to "To top", :anchor => "top" %></li>
+      <li><%= link_to "Add white lines", :anchor => "white_lines" %></li>
+      <li><%= link_to "Images", :anchor => "images" %></li>
+    </ul>
+  </div>
 </div>
+<a id="top"></a>
+
 
 <div class="content">
   <br><br>
@@ -29,14 +40,14 @@
   </pre>
 
   <pre>
-    <h3>font-weight</h3>
+    <h3>font-weight:</h3>
       font-weight makes the thickness of the font, <span class="font_weight">500</span> (here show as 900) is the default
       so anything higher (up till 900) will make the font look thicker. Normal usage is just the value 'bold' which is
       more than sufficiant.
   </pre>
 
   <pre>
-    <h3>Adding white lines</h3>
+    <h3><a id="white_lines"></a>Adding white lines:</h3>
       To add a white in a text you just add this line " &lt;P&gt;&amp;nbsp;&lt;P&gt; ".
       &lt;CENTER&gt; &lt;/CENTER&gt; to center your text (as used in the xhtml page).
       &lt;BR&gt; for a single space text jump.
@@ -59,6 +70,7 @@
 
   <pre>
     <h3>Images</h3>
+    <h3><a id="images"></a>Adding Images:</h3>
       To add a background image to your page you can do that by using: background-image:url(picname.jpg);
       make sure the picture you want to use is in the same folder as from where you are working.
       The picture will, by default, repeat itself over the page. To not have it repeat itself you add:
