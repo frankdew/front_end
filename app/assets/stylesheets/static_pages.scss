@@ -81,7 +81,7 @@ a:link {
 }
 
 a:visited {
-  color: #424242;
+  color: #FE9A2E;
 }
 
 a:hover {
@@ -91,7 +91,7 @@ a:hover {
 }
 
 a:active {
-  color:#088A08;
+  color:#F5ECCE;
   text-decoration: none;
 }
 
@@ -135,6 +135,12 @@ h3 {
 .link_list {
   font-size: 15px;
   margin-left: -12px;
+}
+
+.quick_ref {
+  background-color: #6E6E6E;
+  border-radius: 5px;
+  margin: 5px 5px 5px 5px;
 }
 
 #link {

@@ -8,7 +8,7 @@
   </div>
   <div class="redirect_google">
     <p class="google">Can't find it...?</p>
-    <a class="google_img" href="http://google.com"><img src="http://www.telegraph.co.uk/content/dam/technology/2016/05/09/google_3277450b-large_trans++pJliwavx4coWFCaEkEsb3kvxIt-lGGWCWqwLa_RXJU8.jpg" height="102" style="border-radius: 5px;" ""/></a>
+    <a class="google_img" href="http://google.com"><img src="http://www.telegraph.co.uk/content/dam/technology/2016/05/09/google_3277450b-large_trans++pJliwavx4coWFCaEkEsb3kvxIt-lGGWCWqwLa_RXJU8.jpg" height="102" style="border-radius: 5px;"/></a>
     <p class="google">Google it !!</p>
   </div>
   <br>
@@ -17,18 +17,18 @@
     <ul class="link_list">
       <li><%= link_to "To top", :anchor => "top" %></li>
       <li><%= link_to "Add white lines", :anchor => "white_lines" %></li>
+      <li><%= link_to "Google Fonts", :anchor => "google_font" %></li>
       <li><%= link_to "Images", :anchor => "images" %></li>
     </ul>
   </div>
 </div>
-<a id="top"></a>
-
 
 <div class="content">
+  <a id="top"></a>
   <br><br>
   <div class="css_head">
     <h1 class="cssheader"><em>&alefsym; Learning about CSS &alefsym;</em></h1>
-    <img class="css_pic" src="http://cssjockey.com/wp-content/uploads/2013/05/cssjockey-css.png" height="60" style="border-radius:5px" />
+    <img class="css_pic" src="http://cssjockey.com/wp-content/uploads/2013/05/cssjockey-css.png" height="60" style="border-radius:5px"/>
   </div>
 
   <pre  class="line_height">
@@ -59,7 +59,7 @@
   </pre>
 
   <pre>
-    <h3 class="google_font">Adding Google fonts</h3>
+    <h3 class="google_font"><a id="google_font">Adding Google fonts</a></h3>
       This is fun to look at and easy to do, this title is in font-family: 'Permanent Marker', cursive;
       <span id="black_ops">this text is in font-family: 'Black Ops One', cursive;</span>
       How it works:
@@ -82,6 +82,7 @@
       background-position:10px 50px; to make a picture in the center for several screen sizes you can also use
       percentage like so: background-position:50% 50px; which sets the pic on any screen in the middle.
     </pre>
+
     <pre>
       <h3>Padding, borders and margin</h3>
       With padding you can create space between text and the border(or adjust the default padding) like so:
@@ -96,6 +97,17 @@
       margin: 30px; the default margin is 10px. As with the padding you also get the options for bottom, right, left and top
       to make it just the way you like.
     </pre>
+
+    <pre>
+      <h3>Positioning Elements</h3>
+      Positioning elements is an important part of structuring your website, a good reference is the following site:
+      <a href="http://www.barelyfitz.com/screencast/html-training/css/positioning/"><button type="button">Click here for: Positioning in Ten Steps</button></a>
+      - position: static; : This is the default for every single page element. The only reason you would ever set an element to position: static
+        is to forcefully-remove some positioning that got applied to an element outside of your control.
+      - position: relative; : This position alone will not do anything but when using position attributes
+        like 'top', 'bottom' it will move to that position moving from it's normal position.
+    </pre>
+
     <pre>
       <h3>Styling links</h3>
       To start styling a link in css you have to put <span class="line_alink">a:link</span> where 'a' is the anchor and ':link' is the default state,
@@ -105,5 +117,6 @@
       With the <span class="line_alink">a:hover</span> we can change the properties of the link when we 'hover' over the link.
       Things like: background-color, color, text-decoration or font-weight.
       The final state is the <span class="line_alink">a:active</span> state, this is the state where when the link is clicked.
-      
-</div>
+      Here we can also change things as background-color, color and more.
+    </pre>
+  </div>
