@@ -19,6 +19,10 @@
       <li><%= link_to "Add white lines", :anchor => "white_lines" %></li>
       <li><%= link_to "Google Fonts", :anchor => "google_font" %></li>
       <li><%= link_to "Images", :anchor => "images" %></li>
+      <li><%= link_to "Positioning", :anchor => "position" %></li>
+      <li><%= link_to "Buttons", :anchor => "buttons" %></li>
+      <li><%= link_to "Span Tags", :anchor => "span" %></li>
+      <li><%= link_to "Child Selectors", :anchor => "selector" %></li>
     </ul>
   </div>
 </div>
@@ -69,7 +73,6 @@
   </pre>
 
   <pre>
-    <h3>Images</h3>
     <h3><a id="images"></a>Adding Images:</h3>
       To add a background image to your page you can do that by using: background-image:url(picname.jpg);
       make sure the picture you want to use is in the same folder as from where you are working.
@@ -81,9 +84,9 @@
       background-position takes to parameters (left right), so you can set it 10px from the left and 50px from the top like so:
       background-position:10px 50px; to make a picture in the center for several screen sizes you can also use
       percentage like so: background-position:50% 50px; which sets the pic on any screen in the middle.
-    </pre>
+  </pre>
 
-    <pre>
+  <pre>
       <h3>Padding, borders and margin</h3>
       With padding you can create space between text and the border(or adjust the default padding) like so:
       padding: 5px; or padding-top: 5px; you can als choose bottom, right and left for padding.
@@ -96,19 +99,20 @@
       With the margin you can set the space between, for example, two paragraphs with any amount of pixels like so:
       margin: 30px; the default margin is 10px. As with the padding you also get the options for bottom, right, left and top
       to make it just the way you like.
-    </pre>
+  </pre>
 
-    <pre>
-      <h3>Positioning Elements</h3>
+  <pre>
+      <h3><a id="position"></a>Positioning Elements</h3>
       Positioning elements is an important part of structuring your website, a good reference is the following site:
       <a href="http://www.barelyfitz.com/screencast/html-training/css/positioning/"><button type="button">Click here for: Positioning in Ten Steps</button></a>
-      - position: static; : This is the default for every single page element. The only reason you would ever set an element to position: static
-        is to forcefully-remove some positioning that got applied to an element outside of your control.
-      - position: relative; : This position alone will not do anything but when using position attributes
-        like 'top', 'bottom' it will move to that position moving from it's normal position.
-    </pre>
+    - position: static; : This is the default for every single page element. The only reason you would ever set an element to position: static
+      is to forcefully-remove some positioning that got applied to an element outside of your control.
+    - position: relative; : This position alone will not do anything but when using position attributes
+      like 'top', 'bottom' it will move to that position moving from it's normal position.
+      verder verweken van website: https://css-tricks.com/absolute-relative-fixed-positioining-how-do-they-differ/
+  </pre>
 
-    <pre>
+  <pre>
       <h3>Styling links</h3>
       To start styling a link in css you have to put <span class="line_alink">a:link</span> where 'a' is the anchor and ':link' is the default state,
       (meaning the untouched link) so to make adjustments we start from the default state. Here you can set the properties for 'color', text-decoration and more.
@@ -118,5 +122,46 @@
       Things like: background-color, color, text-decoration or font-weight.
       The final state is the <span class="line_alink">a:active</span> state, this is the state where when the link is clicked.
       Here we can also change things as background-color, color and more.
-    </pre>
-  </div>
+  </pre>
+
+  <pre>
+    <h3>Styling Tables</h3>
+      Styling tables starts with seeing the structure and hierarchy of the 'table' the 'table row' (tr) and the 'table data' (td).
+      As expected the table itself is the main and th tr and td cannot override this then the tr and lastly the td.
+      So you could seperately style the table: border: 3px solid blue; style the 'tr': background-color: yellow;
+      and style the 'td': border: 2px dashed red;
+  </pre>
+
+  <pre>
+    <h3>Styling Lists</h3>
+      Ordered and unordered list you can style with for example: ul {border: 1px solid red;
+                                                                     list-style-type: none;
+                                                                      padding: 0;}
+      In the example the padding is set to '0' because with the 'list-style-type' the dots of the unordered
+      list are removed but the text stays on the same place. By stting the padding to '0' the text is moved to the left.
+      You can also do this in one time like so: ul li {background: #cce5ff;
+                                                                  margin: 5px;}
+     Just trying and see how it works is the best practice here!
+  </pre>
+
+  <pre>
+    <h3><a id="span"></a>Span</h3>
+      The span tag you use for specifing a part which you want to change but have no element for (like p, h1 or h5).
+      By using the span tag you can mark the part you want to style or whatever and make your change to it.
+  </pre>
+
+  <pre>
+    <h3><a id="selector"></a>Child Selectors</h3>
+      A child is the part which is inside an other element, like 'head' and 'body' are the children of the html element.
+      'Style' is put inside the 'head' and therefor a child of 'head' but also a grandchild of html! (html is grandparent).
+      If you put a link inside an &lt;h3&gt; tag, the link tag &lt;a href&gt; is a child of the h3 tag.
+      To adjust just the links which are inside an h3 tag you use the child selector like so:
+      p > a {color: red; font-size: 30px;}
+  </pre>
+
+
+  <pre>
+    <h3><a id="buttons"></a>Buttons</h3>
+      To make the cursor change into a hand when hovering over the button you add 'cursor:pointer;' to your css button class.
+  </pre>
+</div>

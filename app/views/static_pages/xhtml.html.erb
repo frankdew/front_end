@@ -15,9 +15,12 @@
     <h3 id="link">Quick reference:</h3>
     <ul class="link_list">
       <li><%= link_to "To top", :anchor => "top" %></li>
+      <li><%= link_to "Comments", :anchor => "comments" %></li>
+      <li><%= link_to "Inner Links", :anchor => "links" %></li>
       <li><%= link_to "Resize", :anchor => "size" %></li>
       <li><%= link_to "Table Headers", :anchor => "headers" %></li>
-      <li><%= link_to "Cellspacing", :anchor => "cellspacing" %></li>
+      <li><%= link_to "Table Spacing", :anchor => "cellspacing" %></li>
+      <li><%= link_to "The Dom", :anchor => "dom" %></li>
     </ul>
   </div>
 </div>
@@ -53,14 +56,14 @@
 <hr>
 
   <pre>
-    <h3>Comments</h3>
+    <h3><a id="comments"></a>Comments</h3>
       It seems that also xhtml is some how related or mixed in this whole story.
       So for a short side step I will recap this part now.
       To make a comment in html you do this: &lt;!-- comment... --&gt;
   </pre>
 
   <pre>
-    <h3>Links section: Link to a paragraph on the same page</h3>
+    <h3><a id="links"></a>Links section: Link to a paragraph on the same page</h3>
       To make a link to a paragraph or part in you webpage (on the same page) you can do the following:
       &lt;h3&gt;&lt;a name="me"&gt;&lt;/a&gt;paragraph title&lt;/h3&gt; (for Rails you have to use 'id' instead of 'name')
       this you put at the start of the part which you want to link to.
@@ -107,7 +110,7 @@
   </pre>
 
   <pre>
-    <h3>The DOM</h3>
+    <h3><a id="dom"></a>The Dom</h3>
     What is the DOM?
     The DOM defines a standard for accessing documents like XML and HTML:
     "The W3C Document Object Model (DOM) is a platform and language-neutral interface that allows programs and scripts
@@ -117,7 +120,8 @@
     XML DOM - standard model for XML documents
     HTML DOM - standard model for HTML documents
     The DOM defines the objects and properties of all document elements, and the methods (interface) to access them.
-    Zie this link to find out more about the <a href="http://www.w3schools.com/xml/dom_intro.asp">DOM</a>
+    a good reference is the following site:
+    <a href="http://www.w3schools.com/xml/dom_intro.asp"><button type="button">The DOM</button></a>
   </pre>
   </CENTER>
 </div>

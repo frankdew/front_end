@@ -1,7 +1,7 @@
 // Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.index_title, .css_title, .xhtml_title, .js_title {
+.index_title, .css_title, .xhtml_title, .js_title, .wp_title {
   font-family: fantasy;
   text-decoration: underline;
   margin: 10px 10px 10px 10px;
@@ -95,6 +95,10 @@ a:active {
   text-decoration: none;
 }
 
+button {
+  cursor:pointer;
+}
+
 li {
   color: #424242;
 }
@@ -107,7 +111,7 @@ h3 {
   text-decoration: underline;
 }
 
-.cssheader, .xhtml_header, .index_header, .bootstrapheader, .angularheader, .jsheader, .jqueryheader {
+.cssheader, .xhtml_header, .index_header, .bootstrapheader, .angularheader, .jsheader, .jqueryheader, .wpheader {
   font-family: 'Bevan', cursive;
   margin-left: 50px;
   padding: 10px 10px 10px 10px;
@@ -122,7 +126,7 @@ h3 {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#28343b',GradientType=0 ); /* IE6-9 */
 }
 
-.css_head, .xhtmlhead, .bootstrap_head, .angular_head, .js_head, .jquery_head {
+.css_head, .xhtmlhead, .bootstrap_head, .angular_head, .js_head, .jquery_head, .wp_head {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -134,7 +138,17 @@ h3 {
 
 .link_list {
   font-size: 15px;
-  margin-left: -12px;
+}
+
+ul li {
+  background-color: #848484;
+  margin: 2px;
+  border-radius: 2px;
+  list-style-type: none;
+}
+
+ul {
+  padding: 0;
 }
 
 .quick_ref {
@@ -146,6 +160,7 @@ h3 {
 #link {
   font-size: 15px;
   margin-left: 8px;
+  padding-top: 7px;
 }
 
 .bull_pic {
@@ -158,6 +173,11 @@ table {
   border-top-color: #ffffff;
   border-bottom-color: #ffffff;
 }
+
+tr {
+  background-color: #848484;
+}
+
 .table_header {
   float: left;
   margin-left: 75px;
@@ -196,12 +216,10 @@ td {
 }
 
 .index_header_text {
-  // margin-left: 100px;
   font-family: fantasy;
   font-size: 20px;
   height: 130px;
-  // margin-left: 10px;
-  // margin-right: 10px;
+  margin-left: 215px;
   text-decoration: underline;
   color: #ffffff;
   text-shadow: 0 1px 0 #ccc,
@@ -221,12 +239,14 @@ td {
 .index_header {
   display: flex;
   flex-direction: column;
-  margin-left: 410px;
-  margin-right: 250px;
+  margin-left: 183px;
+  margin-right: 220px;
   border-style: solid;
   border-radius: 10px;
   padding: 5px 5px 5px 90px;
   border-color: #ffffff;
+  width: 980px;
+  height: 670px;
 }
 
 .maker {
