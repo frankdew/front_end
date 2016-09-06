@@ -20,6 +20,10 @@
                0 20px 20px rgba(0,0,0,.15);
 }
 
+pre h3:first-letter {
+  font-family: sans-serif;
+}
+
 .total {
     display: flex;
     flex-direction: column;
@@ -58,6 +62,7 @@
 .top_split {
   display: flex;
   flex-wrap: wrap;
+  margin-left: -475px;
 }
 
 .pics {
@@ -65,6 +70,7 @@
   text-decoration: underline;
   border-color: #2E2E2E;
   border-radius: 5px;
+  width: 200px;
 }
 
 #bull_pic {
@@ -207,11 +213,12 @@ td {
 }
 
 .index_content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  // display: flex;
+  // flex-wrap: wrap;
+  // justify-content: center;
   margin-top: 60px;
-  margin-right: 85px;
+  margin-left: 150px;
+  // margin-right: 70px;
   margin-bottom: 150px;
 }
 

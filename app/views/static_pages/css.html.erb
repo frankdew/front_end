@@ -11,7 +11,6 @@
     <a class="google_img" href="http://google.com"><img src="http://www.telegraph.co.uk/content/dam/technology/2016/05/09/google_3277450b-large_trans++pJliwavx4coWFCaEkEsb3kvxIt-lGGWCWqwLa_RXJU8.jpg" height="102" style="border-radius: 5px;"/></a>
     <p class="google">Google it !!</p>
   </div>
-  <br>
   <div class="quick_ref">
     <h3 id="link">Quick reference:</h3>
     <ul class="link_list">
@@ -23,6 +22,8 @@
       <li><%= link_to "Buttons", :anchor => "buttons" %></li>
       <li><%= link_to "Span Tags", :anchor => "span" %></li>
       <li><%= link_to "Child Selectors", :anchor => "selector" %></li>
+      <li><%= link_to "Reset to 0", :anchor => "reset" %></li>
+      <li><%= link_to "Pseudo Elements", :anchor => "pseudo" %></li>
     </ul>
   </div>
 </div>
@@ -51,7 +52,7 @@
   </pre>
 
   <pre>
-    <h3><a id="white_lines"></a>Adding white lines:</h3>
+    <h3><a id="white_lines">Adding white lines:</a></h3>
       To add a white in a text you just add this line " &lt;P&gt;&amp;nbsp;&lt;P&gt; ".
       &lt;CENTER&gt; &lt;/CENTER&gt; to center your text (as used in the xhtml page).
       &lt;BR&gt; for a single space text jump.
@@ -73,7 +74,7 @@
   </pre>
 
   <pre>
-    <h3><a id="images"></a>Adding Images:</h3>
+    <h3><a id="images">Adding Images:</a></h3>
       To add a background image to your page you can do that by using: background-image:url(picname.jpg);
       make sure the picture you want to use is in the same folder as from where you are working.
       The picture will, by default, repeat itself over the page. To not have it repeat itself you add:
@@ -102,11 +103,14 @@
   </pre>
 
   <pre>
-      <h3><a id="position"></a>Positioning Elements</h3>
+      <h3><a id="position">Positioning Elements</a></h3>
       Positioning elements is an important part of structuring your website, a good reference is the following site:
       <a href="http://www.barelyfitz.com/screencast/html-training/css/positioning/"><button type="button">Click here for: Positioning in Ten Steps</button></a>
     - position: static; : This is the default for every single page element. The only reason you would ever set an element to position: static
       is to forcefully-remove some positioning that got applied to an element outside of your control.
+    - Absolute position: with absolute positioning you can put your div's a that spot where you want it to be. Do make sure the seperate div's are not
+      overlapping one another, you can place them absolute which is fine but they will overlapp each other to if you place them like that (no float here!).
+      It needs to be in a 'div' and a 'position: absolute', a 'width' a 'height'  and a 'top' and 'left' (in px) to move the div to its place.
     - position: relative; : This position alone will not do anything but when using position attributes
       like 'top', 'bottom' it will move to that position moving from it's normal position.
       verder verweken van website: https://css-tricks.com/absolute-relative-fixed-positioining-how-do-they-differ/
@@ -145,23 +149,47 @@
   </pre>
 
   <pre>
-    <h3><a id="span"></a>Span</h3>
+    <h3><a id="span">Span</a></h3>
       The span tag you use for specifing a part which you want to change but have no element for (like p, h1 or h5).
       By using the span tag you can mark the part you want to style or whatever and make your change to it.
   </pre>
 
   <pre>
-    <h3><a id="selector"></a>Child Selectors</h3>
+    <h3><a id="selector">Child Selectors</a></h3>
       A child is the part which is inside an other element, like 'head' and 'body' are the children of the html element.
       'Style' is put inside the 'head' and therefor a child of 'head' but also a grandchild of html! (html is grandparent).
-      If you put a link inside an &lt;h3&gt; tag, the link tag &lt;a href&gt; is a child of the h3 tag.
-      To adjust just the links which are inside an h3 tag you use the child selector like so:
-      p > a {color: red; font-size: 30px;}
+      If you put a 'link' inside an &lt;h3&gt; tag, the link tag &lt;a href&gt; is a child of the h3 tag.
+      To access just the links which are inside an h3 tag you use the child selector like so:
+      h3 > a {color: red; font-size: 30px;}
   </pre>
-
 
   <pre>
-    <h3><a id="buttons"></a>Buttons</h3>
+      <h3><a id="reset">Reset Margins & Padding</a></h3>
+      To reste the margins and paddings for your website you have to add this to your css file:
+      * {
+        margin: 0;
+        padding: 0;
+        }
+      This is very usefull because now you can apply your own margins and paddings.
+  </pre>
+
+  <pre>
+    <h3><a id="buttons">Buttons</a></h3>
       To make the cursor change into a hand when hovering over the button you add 'cursor:pointer;' to your css button class.
   </pre>
+
+  <pre>
+    <h3><a id="pseudo">Pseudo Elements</a></h3>
+      Pseudo elements are build-in elements part of other elements, like from a 'paragraph' the first line or first letter.
+      Like for every paragraph: p:first-letter {color: red;} or p:first-line {font-size:20px;} or even 'pre h3:first-line {...}'.
+      This way you can style the beginning of every paragraph of your page or webside.
+  </pre>
+
+  <pre>
+      <h3><a id="override">Overriding styles</a></h3>
+      You can override styles from your css file by putting a style tag underneath the style-link in the head.
+      Like so: &lt;style type="text/css"&gt;h1 {color: green;}&lt;/style&gt; this will override the style from the css
+      as long as you put the style tag underneath the style link. The computer reads this from top to bottom, that's why!
+  </pre>
+
 </div>

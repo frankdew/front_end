@@ -10,7 +10,6 @@
     <a class="google_img" href="http://google.com"><img src="http://www.telegraph.co.uk/content/dam/technology/2016/05/09/google_3277450b-large_trans++pJliwavx4coWFCaEkEsb3kvxIt-lGGWCWqwLa_RXJU8.jpg" height="102" style="border-radius: 5px;"/></a>
     <p class="google">Google it !!</p>
   </div>
-  <br>
   <div class="quick_ref">
     <h3 id="link">Quick reference:</h3>
     <ul class="link_list">
@@ -55,15 +54,21 @@
   </div>
 <hr>
 
+  <p>
+    It seems that also xhtml is some how related or mixed in this whole story.
+    So for a short side step I will recap this part now.
+    To make a comment in html you do this: &lt;!-- comment... --&gt;
+  </p>
+
   <pre>
-    <h3><a id="comments"></a>Comments</h3>
+    <h3><a id="comments">Comments</a></h3>
       It seems that also xhtml is some how related or mixed in this whole story.
       So for a short side step I will recap this part now.
       To make a comment in html you do this: &lt;!-- comment... --&gt;
   </pre>
 
   <pre>
-    <h3><a id="links"></a>Links section: Link to a paragraph on the same page</h3>
+    <h3><a id="links">Links section: Link to a paragraph on the same page</a></h3>
       To make a link to a paragraph or part in you webpage (on the same page) you can do the following:
       &lt;h3&gt;&lt;a name="me"&gt;&lt;/a&gt;paragraph title&lt;/h3&gt; (for Rails you have to use 'id' instead of 'name')
       this you put at the start of the part which you want to link to.
@@ -72,7 +77,7 @@
   </pre>
 
   <pre>
-    <h3><a id="size"></a>Image resize section: How to Resize Images:</h3>
+    <h3><a id="size">Image resize section: How to Resize Images:</a></h3>
       To resize images you can do: >img src="madden.jpg" height="150"/< where 150 means 150 px,
       with this added the image will be resized. Better way to do this is first resize the picture before use,
       for example with photoshop. Because if you use a bigger picture and adjust the size on the webpage you still
@@ -80,8 +85,8 @@
   </pre>
 
   <pre>
-    <h3><a id="headers"></a>Table Headers section: How to make Table Hearders:</h3>
-      To make table headers you use the '<th>' and its closing tag ofcourse, this makes the text go bold
+    <h3><a id="headers">Table Headers section: How to make Table Hearders:</a></h3>
+      To make table headers you use the '&lt;th&gt;' and its closing tag ofcourse, this makes the text go bold
       and centers the header text. So start with creating a table by 'table and its closing tag then the opening <tr> tag
       with the closing one then make the table headers with the content you want in it.
       <br>
@@ -100,7 +105,7 @@
   </table>
 
   <pre>
-    <h3><a id="cellspacing"></a>Table Spacing: How to use spacing</h3>
+    <h3><a id="cellspacing">Table Spacing: How to use spacing</a></h3>
       To make the width of the column bigger (standard it takes the width of the longest word or sentence)
       you can use in the 'table' tag next to ' border="1" width="100%" ' with this the table also gets flexible
       for the page.
@@ -110,18 +115,18 @@
   </pre>
 
   <pre>
-    <h3><a id="dom"></a>The Dom</h3>
-    What is the DOM?
-    The DOM defines a standard for accessing documents like XML and HTML:
-    "The W3C Document Object Model (DOM) is a platform and language-neutral interface that allows programs and scripts
-    to dynamically access and update the content, structure, and style of a document."
-    The DOM is separated into 3 different parts / levels:
-    Core DOM - standard model for any structured document
-    XML DOM - standard model for XML documents
-    HTML DOM - standard model for HTML documents
-    The DOM defines the objects and properties of all document elements, and the methods (interface) to access them.
-    a good reference is the following site:
-    <a href="http://www.w3schools.com/xml/dom_intro.asp"><button type="button">The DOM</button></a>
+      <h3><a id="dom">The Dom</a></h3>
+      What is the DOM?
+      The DOM defines a standard for accessing documents like XML and HTML:
+      "The W3C Document Object Model (DOM) is a platform and language-neutral interface that allows programs and scripts
+      to dynamically access and update the content, structure, and style of a document."
+      The DOM defines the objects and properties of all document elements, and the methods (interface) to access them.
+      a good reference is the following site:
+      <a href="http://www.w3schools.com/xml/dom_intro.asp"><button type="button">The DOM</button></a>
+      The DOM is separated into 3 different parts / levels:
+      Core DOM - standard model for any structured document
+      XML DOM - standard model for XML documents
+      HTML DOM - standard model for HTML documents
   </pre>
-  </CENTER>
+ </CENTER>
 </div>
