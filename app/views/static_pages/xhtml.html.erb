@@ -20,6 +20,8 @@
       <li><%= link_to "Table Headers", :anchor => "headers" %></li>
       <li><%= link_to "Table Spacing", :anchor => "cellspacing" %></li>
       <li><%= link_to "The Dom", :anchor => "dom" %></li>
+      <li><%= link_to "Forms", :anchor => "forms" %></li>
+
     </ul>
   </div>
 </div>
@@ -32,7 +34,6 @@
     <img class="css_pic" src="https://upload.wikimedia.org/wikipedia/commons/c/c7/XHTML_text_representation.png" height="60" style="border-radius:5px" />
   </div>
   <br>
-  <CENTER>
   <div class="top_split">
     <table class="pics" width="100%" border="1" cellpadding="10" cellspacing="5">
       <tr>
@@ -53,12 +54,6 @@
     </table>
   </div>
 <hr>
-
-  <p>
-    It seems that also xhtml is some how related or mixed in this whole story.
-    So for a short side step I will recap this part now.
-    To make a comment in html you do this: &lt;!-- comment... --&gt;
-  </p>
 
   <pre>
     <h3><a id="comments">Comments</a></h3>
@@ -93,7 +88,7 @@
       For making a header which goes over all rows you use the colspan attribute like on 'Thats us!!'
       &lt;th colspan="4"&gt;&lt;h3&gt;That's us!!&lt;img id="bull_pic" src="bull.jpg"/&gt;&lt;/h3&gt;&lt;/th&gt;
   </pre>
-  <table border="1" width="100%" cellspacing="10" cellpadding="10">
+  <table class="people" border="1" width="100%" cellspacing="10" cellpadding="10">
     <tr>
       <th>Type of people</th>
       <th>Reason dislike</th>
@@ -128,5 +123,87 @@
       XML DOM - standard model for XML documents
       HTML DOM - standard model for HTML documents
   </pre>
- </CENTER>
+
+  <pre>
+    <h3><a id="forms">Forms</a></h3>
+      Forms are used to take input from users how visit your website like login or enter credentials and such.
+      To make a form you start with the form tags like so: &lt;form&gt; &lt;/form&gt;.
+      There are many options for attributes which you can use in a form, here are some examples:
+      &lt;form&gt;
+        Username: &lt;input type="text" name="username" maxlength=5 size=8 value="Enter name here"/&gt;
+      &lt;/form&gt;
+      In this example input type 'text' means this box just takes text, as does the 'name'.
+      The 'name="username"' here the 'username' stands for the 'id' (name here means id) of the input line, in this case 'username'.
+      'maxlength' limits the amount of input of characters, in the example the user can only enter 5 characters.
+      'value' here you put the text which goes into the input box to make things extra clear for the user.
+      With 'size' you can adjust the length of the input box the user sees on the page.
+      To provide the user a chioce we use <span class="line_alink">'radio' buttons</span>, for example when the user has to give his or her gender.
+      This can only be male or female (mostly) so you offer a choice like so:
+      &lt;form&gt;
+        Male: &lt;input type="radio" name="gender" value="male"/&gt;
+        Female: &lt;input type="radio" name="gender" value="female"/&gt;
+      &lt;/form&gt;
+      <form>
+        Enter your gender:
+        Male: <input type="radio" name="sex" value="male"><br/>
+        Female: <input type="radio" name="sex" value="female" />
+      </form>
+
+      Now the user has to make a choice and can only pick one because if you click male you cannot click female too.
+      When we use the <span class="line_alink">'checkbox'</span> this will work, you can click more options.
+      This is set up like so:
+      &lt;p&gt;Pick your favorite foods&lt;p&gr;
+      &lt;form&gt;
+        Fries: &lt;input type="checkbox" name="food" value="fries"/&gt;
+        Hamburger: &lt;input type="checkbox" name="food" value="hamburger"/&gt;
+        Cheesburger: &lt;input type="checkbox" name="food" value="cheesburger"/&gt;
+      &lt;/form&gt;
+      The values are for references when using javascript, so we can make this a interactive thing.
+      <form>
+        Pick your favorite foods:
+        Fries: <input type="checkbox" name="food" value="fries"/>
+        Hamburger: <input type="checkbox" name="food" value="hamburger"/>
+        Cheesburger: <input type="checkbox" name="food" value="cheesburger"/>
+      </form>
+      When the options are to many you can use the <span class="line_alink">'dropdown' menu</span>.
+      It works like this:
+      &lt;form&gt;
+        &lt;p&gt;Where are you from?&lt;p&gt;
+        &lt;select name="city"&gt;
+            &lt;option value="amsterdam"&gt;Amsterdam&lt;/option&gt;
+            &lt;option value="paris"&gt;Paris&lt;/option&gt;
+            &lt;option value="berlin"&gt;Berlin&lt;/option&gt;
+            &lt;option value="vienna"&gt;Vienna&lt;/option&gt;
+            &lt;option value="dublin"&gt;Dublin&lt;/option&gt;
+        &lt;/select&gt;
+      &lt;/form&gt;
+      <form>
+        Where are you from?
+        <select name="city">
+            <option value="option">your town</option>
+            <option value="amsterdam">Amsterdam</option>
+            <option value="paris">Paris</option>
+            <option value="berlin">Berlin</option>
+            <option value="vienna">Vienna</option>
+            <option value="dublin">Dublin</option>
+        </select>
+      </form>
+      <br>
+      <span class="line_alink">'Textarea'</span> is another thing in forms, with textarea you can let
+      the user enter text. Like on a dating site where he or she tells more about themselves.
+      You do this like so:
+      &lt;form&gt;
+        &lt;p&gt;Tell us about yourself:&lt;p&gt;
+        &lt;textarea name="bio" rows="8" cols="40"&gt;
+        &lt;/textarea&gt;
+      &lt;/form&gt;
+      This way you make a textarea, with the 'rows' you can set the hight of the textarea and with
+      cols (columns) you set the width.
+      <form>
+        Tell us about yourself:
+        <textarea name="bio" rows="5" cols="30">
+  Type here..
+        </textarea>
+      </form>
+  </pre>
 </div>

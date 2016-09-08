@@ -24,6 +24,7 @@
       <li><%= link_to "Child Selectors", :anchor => "selector" %></li>
       <li><%= link_to "Reset to 0", :anchor => "reset" %></li>
       <li><%= link_to "Pseudo Elements", :anchor => "pseudo" %></li>
+      <li><%= link_to "max width & height ", :anchor => "max" %></li>
     </ul>
   </div>
 </div>
@@ -106,20 +107,29 @@
       <h3><a id="position">Positioning Elements</a></h3>
       Positioning elements is an important part of structuring your website, a good reference is the following site:
       <a href="http://www.barelyfitz.com/screencast/html-training/css/positioning/"><button type="button">Click here for: Positioning in Ten Steps</button></a>
-    - position: static; : This is the default for every single page element. The only reason you would ever set an element to position: static
-      is to forcefully-remove some positioning that got applied to an element outside of your control.
-    - Absolute position: with absolute positioning you can put your div's a that spot where you want it to be. Do make sure the seperate div's are not
-      overlapping one another, you can place them absolute which is fine but they will overlapp each other to if you place them like that (no float here!).
-      It needs to be in a 'div' and a 'position: absolute', a 'width' a 'height'  and a 'top' and 'left' (in px) to move the div to its place.
+    - position: static; : This is the default for every single page element. The only reason you would ever set an element to
+      position: static is to forcefully-remove some positioning that got applied to an element outside of your control.
+    - Absolute position: with absolute positioning you can put your div's a that spot where you want it to be.
+      Do make sure the seperate div's are not overlapping one another, you can place them absolute which is fine
+      but they will overlapp each other too if you place them like that (no float here!).
+      It needs to be in a 'div' and a 'position: absolute', a 'width' a 'height'  and a 'top' and 'left' (in px)
+      to move the div to its place.
     - position: relative; : This position alone will not do anything but when using position attributes
       like 'top', 'bottom' it will move to that position moving from it's normal position.
-      verder verweken van website: https://css-tricks.com/absolute-relative-fixed-positioining-how-do-they-differ/
+      This means that the element has already a spot somewhere on a page, if you give it the 'position:relative;' and move it
+      (either 'top' and 'left') it will move the given pixels from top and left but from the position where it was already.
+      That is the big difference with absolute positioning where it always starts from the left top corner of the page.
+    - position: fixed; : This position is almost the same as 'position absolute;', also starts from the left top corner
+      of the screen when you move it. Difference here is that where you move it to it's going to stay there no matter how
+      hard you scroll on the page.
+      See more on this topic here: <a href="https://css-tricks.com/absolute-relative-fixed-positioining-how-do-they-differ/"><button type="button">How they differ</button></a>
   </pre>
 
   <pre>
       <h3>Styling links</h3>
-      To start styling a link in css you have to put <span class="line_alink">a:link</span> where 'a' is the anchor and ':link' is the default state,
-      (meaning the untouched link) so to make adjustments we start from the default state. Here you can set the properties for 'color', text-decoration and more.
+      To start styling a link in css you have to put <span class="line_alink">a:link</span> where 'a' is the anchor and
+      ':link' is the default state, (meaning the untouched link) so to make adjustments we start from the default state.
+      Here you can set the properties for 'color', text-decoration and more.
       After that we have <span class="line_alink">a:visited</span>here you can set the values for when a link has been visited like
       the color should change to green or something like that.
       With the <span class="line_alink">a:hover</span> we can change the properties of the link when we 'hover' over the link.
@@ -186,10 +196,18 @@
   </pre>
 
   <pre>
-      <h3><a id="override">Overriding styles</a></h3>
+    <h3><a id="override">Overriding styles</a></h3>
       You can override styles from your css file by putting a style tag underneath the style-link in the head.
       Like so: &lt;style type="text/css"&gt;h1 {color: green;}&lt;/style&gt; this will override the style from the css
       as long as you put the style tag underneath the style link. The computer reads this from top to bottom, that's why!
   </pre>
 
+  <pre>
+    <h3><a id="max">Max Width & Height</a></h3>
+      'max-width' and 'max-height' can be used on many elements like 'tables' or images and such.
+      The use of it is to make all the different elements the same size so it looks nicer on the webside, instead of
+      lager and smaller elements.
+      To use this on your images you do like this: img {max-height: 200px;
+                                                        max-width: 200px;}
+  </pre>
 </div>

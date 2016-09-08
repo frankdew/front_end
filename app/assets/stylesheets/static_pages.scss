@@ -24,6 +24,11 @@ pre h3:first-letter {
   font-family: sans-serif;
 }
 
+img .css_pic, .bootstrap_pic, .angular_pic, .js_pic, .jquery_pic {
+  max-width: 100px;
+  max-height: 100px;
+}
+
 .total {
     display: flex;
     flex-direction: column;
@@ -70,7 +75,7 @@ pre h3:first-letter {
   text-decoration: underline;
   border-color: #2E2E2E;
   border-radius: 5px;
-  width: 200px;
+  margin-left: 525px;
 }
 
 #bull_pic {
@@ -178,6 +183,8 @@ table {
   border-color: #424242;
   border-top-color: #ffffff;
   border-bottom-color: #ffffff;
+  max-width: 400px;
+  max-height: 400px;
 }
 
 tr {
@@ -202,6 +209,10 @@ tr {
 
 td {
   text-align: center;
+}
+
+.people {
+  margin-left: 40px;
 }
 
 .line_height {
