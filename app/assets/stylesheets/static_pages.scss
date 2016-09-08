@@ -36,7 +36,8 @@ img .css_pic, .bootstrap_pic, .angular_pic, .js_pic, .jquery_pic {
     min-height: 100%;
     border-radius: 5px;
     background-color: #A4A4A4;
-    width: 175px;
+    // width: 175px;
+    max-width: 100%;
   }
 
 .link_to {
@@ -231,6 +232,7 @@ td {
   margin-left: 150px;
   // margin-right: 70px;
   margin-bottom: 150px;
+  max-width: 100%;
 }
 
 .index_header_text {
@@ -252,6 +254,7 @@ td {
                0 5px 10px rgba(0,0,0,.25),
                0 10px 10px rgba(0,0,0,.2),
                0 20px 20px rgba(0,0,0,.15);
+               max-width: 100%;
 }
 
 .index_header {
@@ -263,8 +266,8 @@ td {
   border-radius: 10px;
   padding: 5px 5px 5px 90px;
   border-color: #ffffff;
-  width: 980px;
-  height: 670px;
+  width: 77%;
+  height: 100%;
 }
 
 .maker {
