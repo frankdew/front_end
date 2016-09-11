@@ -21,6 +21,7 @@
       <li><%= link_to "Table Spacing", :anchor => "cellspacing" %></li>
       <li><%= link_to "The Dom", :anchor => "dom" %></li>
       <li><%= link_to "Forms", :anchor => "forms" %></li>
+      <li><%= link_to "Website Publishing", :anchor => "publishing" %></li>
 
     </ul>
   </div>
@@ -218,6 +219,36 @@
         Now submit file
         <input type="file" name="..file_name.."/>
       </form>
-
+      <span class="line_alink">'Submit button'</span> is the part that comes after a users login part on the website.
+      It's made like so:
+      &lt;form action="some_file" method="post"&gt; (where 'action' holds your 'file' where to store the entered data on a database)
+        Username: &lt; input type="text" name="username"/&gt;<br/>
+        password: &lt;input type="password" name="pword"/&gt;<br/>
+        &lt;input type="submit" value="Submit"&gt;
+      &lt;/form&gt;
+      <form>
+        Username: <input type="text" name="username"/><br/>
+        password: <input type="password" name="pword"/><br/>
+        <input type="submit" value="Submit !!"/>
+      </form>
   </pre>
+  <pre>
+    <h3><a id="publishing">Publishing your website</a></h3>
+      To get your site published on the internet you need to put your application on a webserver.
+      Find any web hosting company where you can host your web application on (for not to much money),
+      they all work some what a like.
+      Register and pay (enter credicard information) now you can start to move your application from your local
+      server on your computer to the bought space on the webserver. First you need to select the <span class="line_alink">"FTP"</span> (server) to continue.
+      The hosting company will offer a system to transfer your files, it will show two little screens where the one
+      (mostly the one on the leftside)
+      are the files on your local computer and on the rightside the FTP server.
+      Now you need to move the files you want to go online from your local computer to the webserver using the arrows.
+      Make sure there is allways an <span class="line_alink">"index.html"</span> file present if it's not it wont work for sure!
+      Put the file from your computer in the webserver map called <span class="line_alink">"public_html"</span>.
+      Now you have put your application on the web!!
+      When making changes on you application on your local computer you can simply upload the updated file again, the same way
+      you did before, now a question will pop up asking you if you want to override the existing file(s).
+      Enter 'yes' and your web application has been updated on the web as well.
+  </pre>
+
 </div>

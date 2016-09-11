@@ -10,6 +10,15 @@
     <a class="google_img" href="http://google.com"><img src="http://www.telegraph.co.uk/content/dam/technology/2016/05/09/google_3277450b-large_trans++pJliwavx4coWFCaEkEsb3kvxIt-lGGWCWqwLa_RXJU8.jpg" height="102" style="border-radius: 5px;"/></a>
     <p class="google">Google it !!</p>
   </div>
+  <div class="quick_ref">
+    <h3 id="link">Quick reference:</h3>
+    <ul class="link_list">
+      <li><%= link_to "To top", :anchor => "top" %></li>
+      <li><%= link_to "Adding Bootstrap", :anchor => "adding" %></li>
+      <li><%= link_to "Starting a project", :anchor => "divs" %></li>
+      <li><%= link_to "Text Styling", :anchor => "styling" %></li>
+    </ul>
+  </div>
 </div>
 
 <div class="content">
@@ -18,4 +27,81 @@
     <h1 class="bootstrapheader"><em>&alefsym; Learning about Bootstrap &alefsym;</em></h1>
     <img class="bootstrap_pic" src="http://blog.getbootstrap.com/img/ogp.png" height="80" style="border-radius:5px" />
   </div>
+
+  <span class="line_alink"></span>
+  <pre>
+    <h3><a id="adding">Adding Bootstrap</a></h3>
+      To add Bootstrap to your project/website you go to the <a href="http://getbootstrap.com/getting-started/">Bootstrap</a> site
+      and copy the "CDN code" to put it in the 'head' part of your web app.
+  </pre>
+
+  <pre>
+    <h3><a id="divs">Starting Bootstrap Project</a></h3>
+      After adding the CDN code to your project you can start-off by adding code to the body.
+      Here you put everything inside &lt;div&gt;'s which you can give the class container or container fluid.
+      Where class="container-fluid" means that the div will be using the whole width of the screen of the device.
+</pre>
+
+  <pre>
+    <h3><a id="grid">GRID</a></h3>
+      After adding the CDN code to your project you can start-off by adding code to the body.
+      Here you put everything inside &lt;div&gt;'s which you can give the class container or container fluid.
+      Where class="container-fluid" means that the div will be using the whole width of the screen of the device.
+      The Bootstrap GRID system consists of 12 columns which you can group tigether just as you seem fit.
+      There are 4 classes you use when using the GRID system:
+        xs - extra small => for phones
+        sm - small => for tablets
+        md - medium => for normail desktops and laptops
+        xl - extra large => for larger desktops like 27 inch iMac
+      For making a 3 column (GRID) layout website you need to group 3 x 4 columns together.
+      You do this (inside the "body") like so:
+      &lt;div class="container-fluid"&gt;   => <em>fluid to make it take up the whole screen</em>.
+        &lt;h1&gt;3 column layout&lt;h1&gt;
+        &lt:div class="row"&gt;  => <em>you give the created columns the class 'row'</em>.
+          &lt;div class="col-md-4" style="background-color: #ff9999"&gt;Left&lt;/div&gt;   => <em>col means column, md is the medium size,</em>
+          &lt;div class="col-md-4" style="background-color: #99ccff"&gt;Middle&lt;/div&gt;                      <em>4 is the amount of columns</em>.
+          &lt;div class="col-md-4" style="background-color: #00cc99"&gt;Right&lt;/div&gt;
+        &lt;/div&gt;
+  </pre>
+
+  <pre>
+    <h3><a id="styling">Text Styling</a></h3>
+      To highlight text you can use the style tag mark like so: &lt;mark&gt;some text&lt;/mark&gt;
+      *<span class="line_alink">Blockquote</span> you can use for styling 'quotes' like so:
+      &lt;blockquote&gt;
+        &lt;p&gt;You can do anything, but not everything.&lt;/p&gt;
+        &lt;footer&gt;David Allen&lt;/footer&gt;
+      &lt;/blockquote&gt;
+      *<span class="line_alink">List</span>, to make a list you do this:
+      &lt;p&gt;Things to do when you're bored&lt;/p&gt;
+      &lt;dl&gt;
+        &lt;dt&gt;Indoors&lt;/dt&gt;
+          &lt;dd&gt;Take a nap&lt;/dd&gt;
+          &lt;dd&gt;Watch Netflix&lt;/dd&gt;
+        &lt;dt&gt;Outdoors&lt;/dt&gt;
+          &lt;dd&gt;- Go back inside&lt;/dd&gt;
+        &lt;/dl&gt;
+      *<span class="line_alink">Multi-line code</span>, for this you best use the 'pre' tag.
+      It works like this:
+      &lt;p&gt;for multi-line code you use pre tags&lt;/p&gt;
+      &lt;pre&gt;
+        for n in range(101):
+        if(n % 4 is 0):
+        print(n)
+      &lt;/pre&gt;
+      *<span class="line_alink">Userweight</span>: &lt;p&gt; to set the users weight use &lt;code&gt;setUserWeight(374);&lt;/code&gt; with an integer.&lt;/p&gt;
+        => <em>gives red letter with a white background</em>.
+      *<span class="line_alink">Keyboard &lt;kbd&gt; input</span> can be marked this way: &lt;p class="one">This is suppost to be keyboard input &lt;kbd&gt;ctrl+alt+del&lt;/kbd&gt;&lt;/p&gt;
+       => <em>gives a black background with white letters</em>.
+       *<span class="line_alink">Color classes:</span>: are build in colors in bootstrap that let you know if the part in a form has been
+       filled out correctly (text color goes green) or muted (text color goes light grey) or wrong (text color goes red).
+       This works like this:
+       &lt;h4&gt;Build in color classes&lt;h4&gt;
+        &lt;p class="text-muted"&gt;Text muted&lt;/p&gt;
+        &lt;p class="text-success"&gt;Form filled out correctly&lt;/p&gt;
+        &lt;p class="text-danger"&gt;Danger text&lt;/p&gt;
+        You can also use these for background colors like so:
+        &lt;p class="bg-danger"&gt;Danger text&lt;/p&gt;
+        &lt;p class="bg-success"&gt;Success text&lt;/p&gt;
+  </pre>
 </div>
