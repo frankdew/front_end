@@ -15,6 +15,12 @@
     <ul class="link_list">
       <li><%= link_to "To top", :anchor => "top" %></li>
       <li><%= link_to "Tags & comments", :anchor => "tags" %></li>
+      <li><%= link_to "Switch Statement", :anchor => "switch" %></li>
+      <li><%= link_to "Loops and Conditionals", :anchor => "loops" %></li>
+      <li><%= link_to "Break and Continue", :anchor => "break" %></li>
+      <li><%= link_to "Functions", :anchor => "function" %></li>
+      <li><%= link_to "Multiple Parameters", :anchor => "multiple" %></li>
+      <li><%= link_to "Return Statement", :anchor => "return" %></li>
     </ul>
   </div>
 </div>
@@ -26,24 +32,174 @@
     <img class="js_pic" src="http://cdn.tutorialzine.com/wp-content/uploads/2015/12/javascript.png" height="80" style="border-radius:5px" />
   </div>
 
-  <span class="line_alink"></span>
+
   <pre>
     <h3><a id="tags">JS tags & comments</a></h3>
       A 'single line comment' in JS is made like this: //..comment here..
 
   </pre>
 
+  <pre>
+    <h3><a id="switch">Switch Statement</a></h3>
 
+  </pre>
 
+  <pre>
+    <h3><a id="loops">Conditionals and Loops</a></h3>
+      <span class="line_alink">For Loop:</span>
+      for(statement 1; statement 2; statement 3) {
+        code block to be executed
+      }
 
+      <em>-Statement 1 is executed before the loop (the code block) starts</em>.
+      <em>-Statement 2 defines the condition for running the loop (the code block)</em>.
+      <em>-Statement 3 is executed each time after the loop (the code block) has been executed</em>.
+      * Example:
+      for(i = 1; i <= 5; i++){
+        document.write(i + "&lt;br/&gt;");
+      }
 
+      in this example,
+      <em>Statement 1 sets a variable before the loop starts (var i = 1)</em>.
+      <em>Statement 2 defines the condition for the loop to run (i must be less than or equal to 5)</em>.
+      <em>Statement 3 increases a value (i++) each time the code block in the loop has been executed</em>.
+      You clould leave out Statement 1 if the values are set before the loop starts:
+        var i = 1;
+        for(;i <=5; i++){
+          document.write(i + "&lt;br/&gt;")
+        }
 
+      <span class="line_alink">While Loop:</span>
+      The while loop repeats through a block of code, as long as a specified condition is true.
+      while(condition){
+        code block
+      }
+      * Example:
+      var i = 0;
+      while(i<=10){
+        document.write(i + "&lt;br/&gt;");
+        i++
+      }
+      The loop will continue to run as long as i is less than, or equal to, 10.
+      Each time the loop runs , i will be increased by 1.
 
+      <span class="line_alink">Do While Loop:</span>
+      The do while loop is a variant of the while loop. This loop will execute the code block once,
+      before checking if the condition is true, and then it will repeat the loop as longnas the condition is true.
+      do{
+        code block
+      }
+      while(condition);
+      * Example:
+      vr i = 20;
+      do{
+        document.write(i +"&lt;br/&gt;");
+        i++
+      }
+      while(i<=25);
+      The loop will always be executed once, even if the condition is false, because the code is executed
+      before the condition is tested.
+  </pre>
 
+  <pre>
+    <h3><a id="break">Break and Continue</a></h3>
+      <span class="line_alink">Break:</span>
+      The break statement 'jumps' out of a loop and continues executing the code after the loop.
+      for(i = 0; i <= 10; i++){
+        if(i == 5){
+          break;
+        }
+        document.write(i + "&lt;br/&gt;");
+      }
+      Once i reaches 5, it will break out of the loop.
+      <span class="line_alink">Continue:</span>
+      The continue statement breaks only one iteration in the loop, and continues with the next iteration.
+      for(i = 0; i <=10; i++){
+        if(i == 5){
+          continue;
+        }
+        document.write(i + "&lt;br/&gt;");
+      }
+      The value 5 will not be printed, because 'continue' skips that iteration of the loop.
+  </pre>
 
+  <pre>
+    <h3><a id="function">Functions</a></h3>
+      A JS function is a block of code designed to perform a particular task.
+      The main advantage of using functions:
+      - Code reuse: Define the code once, and use it many times. Use the same code manytimes with different
+      arguments, to produce different results.
+      A JS function is executed when "something" invokes or calls it!
+      <span class="line_alink">Defining a function:</span>
+      To define a JS function, use the function keyword followed by a name, followed by a set of parentheses().
+      The code to be executed by the function is placed inside curly brackets{}.
+        function name() {
+          code to be executed
+        }
+      For function names the same rules apply as for variables.
+      <span class="line_alink">Calling a function:</span>
+      To execute the function you need to call it.
+      To call a function, start with the name of the function, then follow it with the arguments in parenthases.
+      Example:
+      function myFunction() {
+        alert("Calling a function!");
+      }
 
+      myFunction();  => <em>Alerts "Calling a function", always remember to put a semicolon after calling the function</em>.
+      Once the function is defined, JS allows you to call it as many times as you want to.
+      <span class="line_alink">Function parameters:</span>
+      Functions can take parameters. Function parameters are the names listed in the function's definition.
+        functionName(param 1, param2, param3) {
+          some code
+        }
+      Parameters should be given names which are seperated by commas within the parentheses.
+      After defining the parameters you can use them inside the function.
+        function sayHello(name) {
+          alert("Hi, " + name);
+        }
 
+        sayHello("David");  => <em>Alerts "Hi, David"</em>.
+      You can use here many more names which will execute the function's code each time for the provided argument.
+  </pre>
 
+  <pre>
+    <h3><a id="multiple">Using multiple Parameters with Functions</a></h3>
+      function apples(one, two) {             => "one, two" here are the "parameters"!
+      alert(one + " is better than " + two);
+      }
 
+      apples("Pieter", "Johan"); => <em>Pieter is better than Johan</em>. => This is "passing" the information "Pieter", "Johan" in.
+      apples("sun", "rain"); => <em>sun is better than rain</em>. => This is "passing" the information "sun", "rain" in.
+  </pre>
 
+  <pre>
+    <h3><a id="return">Return statement</a></h3>
+      function addNumbers(a, b) {
+      var c = a + b;
+      return c;
+      }
+
+      document.write(addNumbers(20, 19));
+  </pre>
+
+  <pre>
+    <h3><a id="calling">Calling a function from an other function</a></h3>
+      You can call functions from within other functions like so:
+        function doFirst(){
+          document.write(" Me first ");
+        }
+
+        function doSecond(){
+          document.write(" but Me second ");
+        }
+
+        function start(){
+          doFirst();
+          doSecond();
+        }
+
+        start();
+
+      This will give the outcome of: "Me first but Me second"
+  </pre>
 </div>
