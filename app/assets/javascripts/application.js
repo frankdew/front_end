@@ -14,3 +14,11 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+function myFunction() {
+    document.getElementById("demo").innerHTML = "WHAT..?? YOU TOUCHED ME!!!";
+}
+
+function firstFunction() {
+    document.getElementById("first").innerHTML = "AHHHHH... NOT REALY TOUGH!!!";
+
+}

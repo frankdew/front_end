@@ -21,6 +21,9 @@
       <li><%= link_to "Functions", :anchor => "function" %></li>
       <li><%= link_to "Multiple Parameters", :anchor => "multiple" %></li>
       <li><%= link_to "Return Statement", :anchor => "return" %></li>
+      <li><%= link_to "Calling function", :anchor => "calling" %></li>
+      <li><%= link_to "JS & HTML DOM reference", :anchor => "reference" %></li>
+      <li><%= link_to "Alert, Prompt, Confirm", :anchor => "alert" %></li>
     </ul>
   </div>
 </div>
@@ -36,12 +39,59 @@
   <pre>
     <h3><a id="tags">JS tags & comments</a></h3>
       A 'single line comment' in JS is made like this: //..comment here..
+      Multi-line comments start with /* and end with */.
+      Any text between /* and */ will be ignored by JavaScript.
+  </pre>
 
+  <pre>
+    <h3>Examples JS interactivity</h3>
+      <button id="demo" onclick="myFunction()">Don't touch me you!!!</button><br/>
+      <button id="first" onclick="firstFunction()">You are great!!</button>
   </pre>
 
   <pre>
     <h3><a id="switch">Switch Statement</a></h3>
+      In cases when you need to test for multiple conditions,
+      writing "if else" statements for each condition might not be the best solution.
+      The Switch statement is used to perform different actions based on different conditions.
+        switch(expression){
+          case n1:
+            statements
+            break;
+          case n2:
+            statements
+            break;
+          default:
+            Statements
+        }
+      The switch expression is evaluated once. The value of the expression is compared with the values
+      of each case if there is a match, the associated block of code is executed.
+      Example:
+        var day = 2;
+        switch(day){
+          case 1:
+            document.write("Monday");
+            break;
+          case 2:
+            document.write("Tuesday");
+            break;
+          case 3:
+            document.write("Wednesday");
+            break;
+          default:
+            document.write("Another day");
+        }
 
+      <em>Outputs: "Tuesday"</em>.
+      You can have as many "case statements" as needed.
+      When JS code reaches a "break" keyword, it breaks out of the switch block.
+      This will stop the execution of more code and case testing inside the block.
+      Usualy, a break should be put in each case statement.
+
+      The default keyword specifies te code to run if there is no match.
+        default:
+          document.write("Another day");
+        The default can be omited, if there is no need to handle the case when no match is found.
   </pre>
 
   <pre>
@@ -164,22 +214,39 @@
 
   <pre>
     <h3><a id="multiple">Using multiple Parameters with Functions</a></h3>
+    You can define multiple parameters for a function by comma-separating them. The Parameters
+    are used within the function's definition.
+      function myFunc(x,y){
+        some code
+      }
+      Example:
       function apples(one, two) {             => "one, two" here are the "parameters"!
       alert(one + " is better than " + two);
       }
 
       apples("Pieter", "Johan"); => <em>Pieter is better than Johan</em>. => This is "passing" the information "Pieter", "Johan" in.
       apples("sun", "rain"); => <em>sun is better than rain</em>. => This is "passing" the information "sun", "rain" in.
+      * When calling the function, provide the arguments in the same order in which you defined them.
   </pre>
 
   <pre>
     <h3><a id="return">Return statement</a></h3>
+    A function can have an optional return statement. It is used to return a value from the function.
+    This statement is useful when making caculations that require a result.
+    When JS reaches a return statement, the function stops executing!
       function addNumbers(a, b) {
       var c = a + b;
       return c;
       }
 
-      document.write(addNumbers(20, 19));
+      document.write(addNumbers(20, 19)); => <em>Outputs 39</em>.
+
+    Use return statement to return a value:
+        function myFunction(a,b){
+          return a * b;
+        }
+
+        var x = myFunction(5,6);  => <em>Return value will end up in x, x equals 30</em>.
   </pre>
 
   <pre>
@@ -198,8 +265,51 @@
           doSecond();
         }
 
-        start();
+        start();  => <em>Calling the function 'start'</em>.
 
       This will give the outcome of: "Me first but Me second"
   </pre>
+
+  <pre>
+      <h3><a id="reference">JS and HTML DOM reference</a></h3>
+      This <a href="http://www.w3schools.com/jsref/default.asp">link</a> takes you to a complete JavaScript reference documentation.
+  </pre>
+
+  <pre>
+    <h3><a id="alert">Alert, Prompt, Confirm</a></h3>
+      JS offers three types of popup boxes, the Alert, Prompt and Confirm boxes.
+      <span class="line_alink">Alert Box:</span>
+      An alert box is used when you want to ensure that information gets through to the user.
+      When an alert box pops up, the user must click OK to proceed.
+      The alert <span class="line_alink">function</span> takes a single parameter, which is text displayed in the popup box.
+      Example:
+        alert("Do you realy want to leave this page?");
+      To display line breaks within a popup box, use a backslash followed by the character n.
+      Like so:
+        alert("Hello\nHow are you?");
+
+      <span class="line_alink">Prompt Box:</span>
+      A prompt box is often used to have the user input a value before entering a page.
+      When a prompt box pops up, the user will have to click either OK or Cancel to proceed after entering the input value.
+      If the user clicks OK, the box returns the input value. If the user clicks Cancel, the box returns "null".
+      The prompt()<span class="line_alink">method</span> takes two parameters.
+        - The first is the label, which you want to display in the text box.
+        - The second is a default <span class="line_alink">string</span> to display in the text box (optional).
+      Example:
+        var user = prompt("Please enter your name");
+        alert(user);
+
+      <span class="line_alink">Confirm Box:</span>
+      A confirm box is often used to have the user verify or accept something.
+      When a confirm box pops up, the user must click either OK or Cancel to proceed.
+      If the user clicks OK, the box returns true. If the user clicks Cancel, the box returns false.
+      Example:
+        var result = confirm("Do you realy want to leave this page?");
+        if(result == true){
+          alert("Thanks for visiting");
+        }
+        else{
+          alert("Thanks for staying with us");
+        }
+      </pre>
 </div>
